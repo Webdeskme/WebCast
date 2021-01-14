@@ -1,0 +1,64 @@
+{
+  "name": "webcast",
+  "version": "1.0.0",
+  "description": "Share Quickly and Simply",
+  "main": "main.js",
+  "scripts": {
+	  "postinstall": "install-app-deps",
+    "test": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "WebCast",
+    "productName": "WebCast",
+    "asar": true,
+    "copyright": "©2019 WebFrame, Inc.",
+    "mac": {
+      "category": "WebCast.Utility"
+    },
+    "linux": {
+      "icon": "icon.icns",
+      "target": [
+        "AppImage",
+        "deb",
+        "snap",
+        "rpm"
+      ],
+      "category": "Utility",
+      "packageCategory": "Utility"
+    },
+    "deb": {
+      "synopsis": "WebCast"
+    },
+    "snap": {
+      "synopsis": "WebCast"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webdeskme/WebCast.git"
+  },
+  "keywords": [
+    "webcast"
+  ],
+  "author": {
+    "name": "Adam Telford",
+    "email": "atelford@webdesk.me",
+    "url": "https://www.webfra.me/"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Webdeskme/WebCast/issues"
+  },
+  "homepage": "https://github.com/Webdeskme/WebCast#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-builder": "^22.9.1",
+    "yarn": "^1.22.10"
+  }
+}
