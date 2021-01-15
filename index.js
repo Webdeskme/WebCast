@@ -2,6 +2,7 @@ var fs = require('fs');
 const {shell} = require('electron');
 const express = require('express');
 const app = express();
+const publicIp = require('public-ip');
 const port = 3000;
 const home = require('os').homedir();
 var os = require('os');
@@ -55,3 +56,6 @@ $("#cast").click(function(){
   });
   //document.getElementById("myip").innerHTML = myIP;
   });
+  (async () => {
+document.getElementById("ip").innerHTML = await publicIp.v4();
+})();

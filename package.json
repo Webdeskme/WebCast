@@ -4,7 +4,7 @@
   "description": "Share Quickly and Simply",
   "main": "main.js",
   "scripts": {
-	  "postinstall": "install-app-deps",
+    "postinstall": "install-app-deps",
     "test": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
@@ -54,7 +54,8 @@
   "homepage": "https://github.com/Webdeskme/WebCast#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "public-ip": "^4.0.3"
   },
   "devDependencies": {
     "electron": "^11.2.0",
